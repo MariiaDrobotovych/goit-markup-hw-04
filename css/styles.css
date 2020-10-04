@@ -137,12 +137,13 @@ nav {
 .contact .icon-envelope {
   width: 16px;
   height: 12px;
-  color: #757575;
+  fill: var(--main-text);
 }
 
 .contact .icon-smartphone {
   width: 10px;
   height: 16px;
+  fill: var(--main-text);
 }
 .social-link a {
   display: flex;
@@ -153,6 +154,7 @@ nav {
 .social-link {
   margin-bottom: 30px;
 }
+
 /* logo  styles common*/
 .logo {
   color: #000000;
@@ -389,6 +391,10 @@ nav {
   background-color: var(--text-accent);
   border-radius: 50%;
   cursor: pointer;
+}
+
+.social-link-thumb:hover {
+  fill: var(--main-bg-color);
 }
 
 .social-link svg {
