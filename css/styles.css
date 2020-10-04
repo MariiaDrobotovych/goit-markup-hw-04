@@ -144,7 +144,15 @@ nav {
   width: 10px;
   height: 16px;
 }
+.social-link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.social-link {
+  margin-bottom: 30px;
+}
 /* logo  styles common*/
 .logo {
   color: #000000;
@@ -266,8 +274,13 @@ nav {
 }
 
 .advantages-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 270px;
   height: 120px;
+
   background-color: var(--grey-bg-color);
   margin-bottom: 30px;
 }
@@ -306,7 +319,6 @@ nav {
   padding-right: 0px;
   padding-left: 0px;
 }
-
 .works-img {
   display: block;
 }
@@ -373,6 +385,12 @@ nav {
   height: 44px;
 }
 
+.social-link-thumb:hover {
+  background-color: var(--text-accent);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .social-link svg {
   width: 20px;
   height: 20px;
@@ -425,4 +443,52 @@ footer .address {
 
   font-size: 14px;
   line-height: 24px;
+}
+
+.social-links-footer .phrase {
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+}
+
+.socila-links-footer .sl-thumb {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.sl-footer svg {
+  width: 20px;
+  height: 20px;
+}
+
+.sl-footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.sl-footer a:hover,
+.sl-footer:focus {
+  background-color: var(--text-accent);
+}
+
+.sl-footer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.address-bottom {
+  margin-right: 70px;
+}
+
+.sl-thumb:not(:last-child) {
+  margin-right: 10px;
 }
