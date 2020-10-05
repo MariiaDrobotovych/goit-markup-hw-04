@@ -64,6 +64,10 @@ nav {
   letter-spacing: 0.02em;
 }
 
+.header-page .address-list-top:not(:last-child) {
+  margin-right: 30px;
+}
+
 .site-nav {
   display: flex;
   margin-left: 93px;
@@ -96,11 +100,6 @@ nav {
   color: var(--text-accent);
 }
 
-.contact .link:hover,
-.contact .link:focus {
-  color: var(--text-accent);
-}
-
 .top {
   display: flex;
   align-items: center;
@@ -123,17 +122,34 @@ nav {
   margin-left: auto;
 }
 
-.header-page .contact li:not(:last-child) {
-  margin-right: 50px;
+.contact .icon-envelope {
+  width: 16px;
+  height: 12px;
+  fill: var(--main-text);
 }
 
-.address .link:hover,
-.address .link:focus {
+.contact .icon-smartphone {
+  width: 10px;
+  height: 16px;
+  fill: var(--main-text);
+}
+
+.address-list-top svg {
+  margin-right: 10px;
+}
+
+.address-list-top .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address-list-top .link:hover {
   color: var(--text-accent);
 }
 
-.header-page {
-  border-bottom: 1px solid #ececec;
+.address-list-top .link:hover svg {
+  fill: var(--text-accent);
 }
 
 /* logo  styles common*/
@@ -244,7 +260,6 @@ button:focus {
 }
 
 /* footer */
-
 footer {
   background-color: var(--secondary-bg-color);
 }
@@ -290,4 +305,53 @@ footer .address {
 
   font-size: 14px;
   line-height: 24px;
+}
+
+.social-links-footer .phrase {
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+}
+
+.socila-links-footer .sl-thumb {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.sl-footer svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-bg-color);
+}
+
+.sl-footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.sl-footer a:hover,
+.sl-footer:focus {
+  background-color: var(--text-accent);
+}
+
+.sl-footer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.address-bottom {
+  margin-right: 70px;
+}
+
+.sl-thumb:not(:last-child) {
+  margin-right: 10px;
 }
