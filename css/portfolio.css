@@ -196,6 +196,7 @@ main {
   border-color: transparent;
 
   padding: 6px 22px;
+  cursor: pointer;
 }
 
 button:hover,
