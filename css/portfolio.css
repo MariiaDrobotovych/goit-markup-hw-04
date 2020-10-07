@@ -144,11 +144,13 @@ nav {
   align-items: center;
 }
 
-.address-list-top .link:hover {
+.address-list-top .link:hover,
+.address-list-top .link:focus {
   color: var(--text-accent);
 }
 
-.address-list-top .link:hover svg {
+.address-list-top .link:hover svg,
+.address-list-top .link:focus svg {
   fill: var(--text-accent);
 }
 
