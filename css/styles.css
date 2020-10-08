@@ -574,7 +574,7 @@ footer .address {
 }
 
 .sl-footer a:hover,
-.sl-footer:focus {
+.sl-footer a:focus {
   background-color: var(--text-accent);
 }
 
